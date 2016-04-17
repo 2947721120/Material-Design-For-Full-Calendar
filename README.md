@@ -1,48 +1,54 @@
-# Material Design for jQuery Full Calendar
+# jQuery的完整日历材料设计
 
-A Material Design theme for the jQuery Full Calendar plugin
+为jQuery完整的日历插件材料设计主题
 
 <img src="http://i.imgur.com/TH3VsJU.gif">
 
-What the actual Android Material Design calendar looks like:
+实际的安卓材料设计日历的样子：
 <img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/09/1410153384GIF2.gif">
 
-This is what default FullCalendar looks like. Ew!
+这是默认的fullcalendar看起来像。电子战！
 
 <img src="http://imgur.com/vKTKUTx.png">
 
-While FullCalendar is pretty awesome, it looks pretty terrible without
-any styling. I was inspired by Google's Material Design, while
-coincidentally I needed a fitting theme for my Drexel
-[Schedulizer](http://loop.tf/schedulizer) service. Doing some basic
-research, it didn't seem like there were any Material Design calendar
-plugins or themes that were as flexible as FullCalendar's
-functionality, so I took matters to my own hands and put this
-together.
+而fullcalendar是非常可怕的，它看起来很可怕的不
 
-### Setup Full Calendar
+任何造型。我受到了谷歌的材料设计的启发
 
-Initialize your FullCalendar object using the following settings
+巧合的是，我需要为我的德崇证券一个合适的主题
+[Schedulizer](http://loop.tf/schedulizer) 服务。做一些基本的
 
-    editable: false, // Don't allow editing of events
+研究，似乎没有任何材料设计日历
+
+插件或主题，如fullcalendar的灵活
+
+功能，所以我把事情自己的手，把这个
+
+在一起。
+
+### 建立完整的日历
+
+使用以下设置初始化你的fullcalendar对象
+
+    editable: false, //不允许编辑事件
     handleWindowResize: true,
-    weekends: false, // Hide weekends
-    defaultView: 'agendaWeek', // Only show week view
-    header: false, // Hide buttons/titles
-    minTime: '07:30:00', // Start time for the calendar
-    maxTime: '22:00:00', // End time for the calendar
+    weekends: false, // 隐藏的周末
+    defaultView: 'agendaWeek', //只显示周视图
+    header: false, // 隐藏按钮/标题
+    minTime: '07:30:00', // 开始时间为日历
+    maxTime: '22:00:00', //比时间的日志
     columnFormat: {
-        week: 'ddd' // Only show day of the week names
+        week: 'ddd' //只 显示 天 本 周 的 名字
     },
-    displayEventTime: true, // Display event time
+    displayEventTime: true, //显示事件时间
     
 ### Usage
 
-Compile `_materialFullCalendar.scss` using your favorite SASS compiler, or simply change the file
-extension to `.css`. There's little to no actual SASS elements in
-here.
+Compile `_materialFullCalendar.scss`使用您最喜爱的SASS编译，或简单地改变文件
+扩展 `.css`. 有没有实际的SASS元素
+在这里.
 
-Pushing and adding new events is still the same, although you apply a `color` attribute.
+推和添加新的事件仍然是相同的，虽然你申请`color` 属性。
 
     events.push({
         title: 'This is a Material Design event!',
@@ -51,7 +57,7 @@ Pushing and adding new events is still the same, although you apply a `color` at
         color: '#C2185B'
     });
 
-### Applying Material Design Colors 
+### 材料设计颜色
 
 <img src="http://i.imgur.com/HCeR1PB.png"></img>
 
@@ -61,8 +67,7 @@ Highly recommend the 700 level palette to achieve the same color effect as I do.
 
 An opacity of `0.65` is automatically applied to each event to achieve a softer look. 
 
-
-
+请注意             这个主题是不完整的。我没有测试它在每月或             每日意见，因为我的目的，我只需要它在一个             ` agendaweek `。这也可能是车的时候，用在其他方面。感觉             免费使用以下说明作出贡献。 
 ### Please Note
 
 This theme is in no way complete. I did not test it in the monthly or
